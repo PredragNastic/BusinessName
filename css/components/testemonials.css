@@ -1,0 +1,126 @@
+/*** MOBILE ***/
+
+.testemonial__desc{
+    padding: 16px  14px 12px;
+    background-color: #F6F3F3;
+    font-style: italic;
+    line-height: 19px;
+
+    color: #747474;
+
+}
+
+.testem-desc-mb{
+    margin-bottom: 11px;
+}
+
+.testemonial__desc-triangle{
+    width: 21px;
+    height: 16px;
+
+     position: relative;
+    
+    left: 30px;
+
+    border-top: 16px solid #F6F3F3;
+    border-right: 21px solid transparent;
+
+}
+
+.user-icon{
+    margin-right: 1.5rem;
+    height: 30px;
+    width: 30px;
+
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+
+   
+}
+
+.testemonial__user-info{
+    line-height: 16px;
+    color: #4D4E50;
+}
+
+.testemonials .testemonials-carousel-indicators{
+    position: relative;
+    align-items: center;
+}
+
+
+.testemonials .testemonials-carousel-indicators .slide-btn{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #282528;
+    
+    
+}
+
+.testemonials .testemonials-carousel-indicators .slide-btn.active{
+    
+    border: 2px solid #709DCA;
+    background-color: #fff;;
+    
+    
+}
+
+
+/*** SM - 576 ***/
+@media(min-width:576px){
+
+}
+
+/*** MD - 768 ***/
+@media(min-width:768px){
+    
+    .testemonials .section-title-decoration{
+        margin-bottom: 53px;
+    }
+    
+    .testemonial__desc{
+        padding: 18px  16px 14px;
+        line-height: 21px;
+    }
+
+    .testemonial_user-info{
+        line-height: 18px;
+    }
+}
+
+/*** LG - 992 ***/
+@media(min-width:992px){
+    
+    .testemonials .section-title-decoration{
+        margin-bottom: 63px;
+    }
+
+    .testemonial__desc{
+        padding: 20px  18px 16px;
+    }
+}
+
+/*** XL - 1200 ***/
+@media(min-width:1200px){
+    
+    .testemonials .section-title-decoration{
+        margin-bottom: 73px;
+    }
+    
+    .testemonial__desc{
+        padding: 26px  24px 19px;
+        line-height: 23px;
+    }
+
+    .testemonial__user-info{
+        line-height: 20px;
+    }
+}
+
+/*** XXL - 1400 ***/
+@media(min-width:1400px){
+
+}
+

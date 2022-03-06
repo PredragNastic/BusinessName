@@ -1,0 +1,222 @@
+
+/*** MOBILE ***/
+
+.hero .carousel-item{
+    padding: 245px 0 100px;
+    /*min-height: 100vh;*/
+
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.hero .slide-content h2{
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+}
+
+.hero .slide-content p{
+    margin-bottom: 95px;
+
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+}
+
+.hero .carousel .hero__btn{
+    margin-bottom: 48px;
+    line-height: 49px;
+    padding: 0 24px;
+    background-color: #709DCA;
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*** nex and prev btns ***/
+.carousel-control-prev{
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next{
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+
+.carousel-control-next, .carousel-control-prev{
+    width: 24px;
+    height: 24px;
+    padding: 0.15rem;
+
+    border: 2px solid #709DCA;
+    border-radius: 50%;
+
+    opacity: 1;
+}
+
+.fa-chevron-left,
+.fa-chevron-right{
+    font-size: 0.9rem;
+    color: #FFC155;
+}
+
+
+/*** indicators ***/
+.hero .carousel .hero-carousel-indicators{
+    bottom: 42px;
+}
+
+.hero .carousel .hero-carousel-indicators .hero-slide-btn{
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    background-clip: content-box;
+    background-color: transparent;
+    padding: 3px;
+    color: #FFFFFF;
+}
+
+.hero .carousel .hero-carousel-indicators .hero-slide-btn.active{
+    border: 1px solid #fff;
+}
+
+.inner-dot{
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+    border-radius: 50%;
+}
+
+
+
+/*** SM - 576 ***/
+@media(min-width:576px){
+    .hero .slide-content h2{
+    font-size: 24px;
+    line-height: 26px;   
+}
+
+.hero .slide-content p{
+    font-size: 16px;
+    line-height: 20px; 
+}
+
+}
+
+/*** MD - 768 ***/
+@media(min-width:768px){
+    .hero .slide-content h2{
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero .slide-content p{  
+        font-size: 18px;        
+        line-height: 22px;
+    }
+
+    .hero .carousel .hero__btn{
+        margin-bottom: 32px;
+        font-size: 16px;  
+    }
+
+    /*** nex and prev btns ***/
+    .carousel-control-prev{
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+
+    }
+
+    .carousel-control-next{
+
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+    }
+
+
+    .carousel-control-next, .carousel-control-prev{
+        width: 36px;
+        height: 36px;
+    }
+
+    .fa-chevron-left,
+    .fa-chevron-right{
+        font-size: 1rem;
+    }
+
+}
+
+/*** LG - 992 ***/
+@media(min-width:992px){
+
+}
+
+/*** XL - 1200 ***/
+@media(min-width:1200px){
+
+    .hero .slide-content h2{
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+    .hero .slide-content p{
+        margin-bottom: 95px;
+
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .hero .carousel .hero__btn{
+        margin-bottom: 0;
+        font-size: 17px;
+    }
+
+    /*** nex and prev btns ***/
+    .carousel-control-prev{
+        left: 185px;
+    }
+
+    .carousel-control-next{
+        right: 185px;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width: 43px;
+        height: 43px;
+    }
+
+    .fa-chevron-left,
+    .fa-chevron-right{
+        font-size: 1.5rem;
+    }
+}
+
+/*** XXL - 1400 ***/
+@media(min-width:1400px){
+
+}

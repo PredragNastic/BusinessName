@@ -1,0 +1,58 @@
+/* 
+    Created on : 26-Dec-2021, 09:06:50
+    Author     : predr
+*/
+
+.footer{
+    padding: 40px 0;
+    background-color: #062033;
+    color: #C4C4C4;
+}
+
+.footer .footer__social-nav .social-link{
+    margin: 0 4px;
+    width: 30px;
+    height: 30px;
+    background-color: #2C3B42;
+    
+    line-height: 30px;
+    
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .footer__social-nav .fab{
+    color: #fff;
+}
+
+.footer .footer__social-nav .social-link:hover{
+    background-color: #71B6D5;
+}
+
+/*** MOBILE ***/
+
+/*** SM - 576 ***/
+@media(min-width:576px){
+
+}
+
+/*** MD - 768 ***/
+@media(min-width:768px){
+
+}
+
+/*** LG - 992 ***/
+@media(min-width:992px){
+
+}
+
+/*** XL - 1200 ***/
+@media(min-width:1200px){
+
+}
+
+/*** XXL - 1400 ***/
+@media(min-width:1400px){
+
+}

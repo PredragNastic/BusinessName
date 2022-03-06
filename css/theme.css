@@ -1,0 +1,201 @@
+/*** GLOBAL STYLES ***/
+
+/*** MOBILE ***/
+body{
+    font: 400 14px 'Open Sans', sans-serif;
+}
+
+.services__item-desc,
+.about-desc,
+.testemonial__desc,
+.testemonial__user-info{
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.services__item-desc{
+    font-size: 11.5px;
+    line-height: 18px;
+    color: #7B7B7B;
+}
+
+.about-desc{
+    line-height: 20px;
+    color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font: 700 22px 'Open Sans', sans-serif;
+    line-height: 24px;
+    text-align: center;
+    color: #709DCA;
+}
+
+.section-title{
+    margin-bottom: 20px;
+
+    letter-spacing: -0.25px;
+    text-transform: uppercase;
+
+}
+
+.section-title-decoration{
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.deco-icon{
+    margin: 0 18px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: #FFC155;
+}
+
+.deco-line{
+    display: block;
+    width: 85px;
+    height: 1px;
+    background-color: #FFC155;
+
+}
+
+.services__item-title{
+    margin-bottom: 14px;
+
+    font: 700 14.5px 'Lato', sans-serif;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #394B50;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.port-item-mb-mob{
+    margin-bottom: 1rem;
+}
+
+
+/*** SM - 576 ***/
+@media(min-width:576px){
+
+}
+
+/*** MD - 768 ***/
+@media(min-width:768px){
+    body{
+        font-size: 15px;
+    }
+
+    .services__item-desc{
+        line-height: 20px;
+    }
+
+    .about-desc{
+        line-height: 22px;
+    }
+
+    h1, h2, h3, h4, h5, h6
+    .h1, .h2, .h3, .h4, .h5, .h6{
+
+        font: 700 24px 'Open Sans', sans-serif;
+        line-height: 26px;
+    }
+
+    .services__item-title{
+        margin-bottom: 16px;
+
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+/*** LG - 992 ***/
+@media(min-width:992px){
+
+    .services__item-desc,
+    .about-desc,
+    .testemonial__desc,
+    .testemonial__user-info{
+        font-size: 12.5px;
+    }
+
+    .services__item-title,
+    .services__item-desc {
+        text-align: left;
+    }
+
+    .port-item-mb-mob{
+        margin-bottom: 0;
+    }
+
+}
+
+/*** XL - 1200 ***/
+@media(min-width:1200px){
+    body{
+        font-size: 16px;
+    }
+
+    .services__item-desc,
+    .about-desc,
+    .testemonial__desc,
+    .testemonial__user-info{
+        font-size: 13px;
+    }
+
+    .services__item-desc{
+        max-width: 457px;
+        line-height: 22px;
+    }
+
+    .about-desc{
+        line-height: 24px;
+    }
+
+    h1, h2, h3, h4, h5, h6
+    .h1, .h2, .h3, .h4, .h5, .h6{
+        font: 700 26px 'Open Sans', sans-serif;
+        line-height: 28px;
+    }
+
+    .services__item-title{
+        margin-bottom: 20px;
+
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .container{
+        max-width: 1130px;
+    }
+
+    .serv-item-mb-xl{
+        margin-bottom: 5rem!important; /*80px*/
+    }
+
+}
+
+/*** XXL - 1400 ***/
+@media(min-width:1400px){
+    .container{
+        max-width: 1130px;
+    }
+}

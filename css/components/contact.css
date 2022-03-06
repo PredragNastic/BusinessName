@@ -1,0 +1,99 @@
+/*** MOBILE ***/
+
+.contact{
+    padding-top: 72px;
+    background-color: #394B50;
+}
+
+
+.contact__item-title{
+    margin-bottom: 29px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.pacifico-title{
+    margin-bottom: 26px;
+    font: 400 22px 'Pacifico', sans-serif;
+}
+
+.contact__item-desc,
+.twitter-post__desc,
+.twitter-post__time{
+    font-size: 13.5px;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: #C4C4C4;
+}
+
+
+.contact__item-desc--lighter{
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: #C3C3C3;
+}
+
+.contact__icon{
+    font-size: 21px;
+    color: #71B6D5;
+}
+
+.contact .contact-link{
+    color: #fff;
+}
+
+.twitter-icon{
+    font-size: 20px;
+    color: #71B6D5;
+}
+
+.twitter-post__time{
+    text-transform: capitalize;
+    color: #71B6D5;
+}
+
+.contact .subscribe-form .form-control{
+    border: 1px solid transparent;
+    font-size: 13px;
+}
+
+.contact .subscribe-form .btn-outline-secondary{
+    background-color: #71B6D5;
+    color: #fff;
+}
+
+/*** SM - 576 ***/
+@media(min-width:576px){
+
+}
+
+/*** MD - 768 ***/
+@media(min-width:768px){
+
+    .contact__item-title{
+        text-align: left;
+
+    }
+
+    
+}
+
+/*** LG - 992 ***/
+@media(min-width:992px){
+
+}
+
+/*** XL - 1200 ***/
+@media(min-width:1200px){
+
+}
+
+/*** XXL - 1400 ***/
+@media(min-width:1400px){
+
+}
+

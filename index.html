@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Predrag Nastić">
+    <meta name="description" content="BusinessName Homework project">
+    <meta name="keywords" content="BUsinessName, Bootstrap, Bootstrap5, Responsive, html, css">
+    <link rel="icon" type="image/png" href="./fav.png">
+
+    <!--ios compatibility-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="ime sajta">
+    <link rel="apple-touch-icon" href="./apple-icon-144x144.png">
+
+    <!--Android compatibility-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="ime sajta">
+    <link rel="icon" type="image/png" href="./android-icon-192x192.png">
+
+    <!-- FONTS -->
+    <link href="./css/fonts.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
+    <link href="./css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="./css/page-styles.css" rel="stylesheet" type="text/css" />
+
+    <title>BssinessName</title>
+</head>
+
+<body onscroll="headerBackgroundAnimation();">
+    <!-- HEADER START -->
+    <header id="page-top" class="header fixed-top">
+        <!-- navigation start -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+            <!-- container start -->
+            <div class="container">
+                <!-- brand start -->
+                <a class="navbar-brand m-0" href="#">
+                    <img src="./images/logo.png" alt="company logo" width="194" height="28" />
+                </a><!-- brand end -->
+
+                <!-- hamburger togler start -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--<span class="navbar-toggler-icon"></span>-->
+                    <span class="hamb-line"></span>
+                    <span class="hamb-line"></span>
+                    <span class="hamb-line"></span>
+                </button> <!-- hamburger togler end -->
+
+                <!-- colapse start -->
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <!-- nav-menu start -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testemonials">Testemonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul> <!-- nav-menu end -->
+                </div> <!-- colapse end -->
+            </div> <!-- container end -->
+        </nav> <!-- navigation end -->
+    </header> <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+        <!-- hero section start -->
+        <section class="hero">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- slide start -->
+                    <div class="carousel-item active" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                             url(./images/slides/slide1.jpg)">
+                        <!-- hero - content container start -->
+                        <div class="container">
+                            <!-- content start -->
+                            <div class="slide-content text-center">
+                                <h2>Simple,Fresh &#38; Unique Design</h2>
+                                <p>Donec posuere augue venenatis</p>
+                                <a class="hero__btn d-inline-block" href="#services">show more</a>
+                            </div> <!-- content end -->
+                        </div> <!-- hero - content container end -->
+                    </div> <!-- slide end -->
+
+                    <!-- slide start -->
+                    <div class="carousel-item" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                             url(./images/slides/slide1.jpg)">
+                        <!-- hero - content container start -->
+                        <div class="container">
+                            <!-- content start -->
+                            <div class="slide-content text-center">
+                                <h2>Simple,Fresh &#38; Unique Design</h2>
+                                <p>Donec posuere augue venenatis</p>
+                                <a class="hero__btn d-inline-block" href="#services">show more</a>
+                            </div> <!-- content end -->
+                        </div> <!-- hero - content container end -->
+                    </div> <!-- slide end -->
+
+                    <!-- slide start -->
+                    <div class="carousel-item" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                             url(./images/slides/slide1.jpg)">
+                        <!-- hero - content container start -->
+                        <div class="container">
+                            <!-- content start -->
+                            <div class="slide-content text-center">
+                                <h2>Simple,Fresh &#38; Unique Design</h2>
+                                <p>Donec posuere augue venenatis</p>
+                                <a class="hero__btn d-inline-block" href="#services">show more</a>
+                            </div> <!-- content end -->
+                        </div> <!-- hero - content container end -->
+                    </div> <!-- slide end -->
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="hero-carousel-indicators carousel-indicators m-0">
+                    <button class="hero-slide-btn active" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+                        <span class="inner-dot"></span>
+                    </button>
+                    <button class="hero-slide-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2">
+                        <span class="inner-dot"></span>
+                    </button>
+                    <button class="hero-slide-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3">
+                        <span class="inner-dot"></span>
+                    </button>
+                </div>
+            </div>
+        </section> <!-- hero section end -->
+
+        <!-- services section start -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="services__lead">
+                    <h2>What we offer</h2>
+                    <p class="text-center">
+                        Vestibulum elementum ex ullamcorper ligula vulputate.
+                    </p>
+                </div>
+                <!-- wrapper start -->
+                <div class="services__item-wrapper">
+                    <!-- main grid start -->
+                    <div class="row gx-5">
+
+                        <!-- service item start -->
+                        <div class="col-12 mb-4 mb-sm-5 col-md-6 serv-item-mb-xl">
+                            <article class="services__item h-100 text-center">
+                                <div class="row">
+                                    <div class="col-12 col-lg-2">
+                                        <div class="services__item-icon h-100">
+                                            <span class="fas fa-tools"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <div class="service__item-content">
+                                            <h5 class="services__item-title">Vivamus tincidunt</h5>
+                                            <p class="services__item-desc">
+                                                Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque.
+                                                Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi
+                                                ullamcorper.
+                                                Curabitur tellus ligula, laoreet vitae lectus vitae.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div> <!-- service item end -->
+
+                        <!-- service item start -->
+                        <div class="col-12 mb-4 mb-sm-5 col-md-6 serv-item-mb-xl">
+                            <article class="services__item h-100 text-center">
+                                <div class="row">
+                                    <div class="col-12 col-lg-2">
+                                        <div class="services__item-icon h-100">
+                                            <span class="fas fa-shopping-cart"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <div class="service__item-content">
+                                            <h5 class="services__item-title">Vivamus tincidunt</h5>
+                                            <p class="services__item-desc">
+                                                Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque.
+                                                Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi
+                                                ullamcorper.
+                                                Curabitur tellus ligula, laoreet vitae lectus vitae.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div> <!-- service item end -->
+
+                        <!-- service item start -->
+                        <div class="col-12 mb-4 mb-sm-5 col-md-6 serv-item-mb-xl">
+                            <article class="services__item h-100 text-center">
+                                <div class="row">
+                                    <div class="col-12 col-lg-2">
+                                        <div class="services__item-icon h-100">
+                                            <span class="fas fa-layer-group"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <div class="service__item-content">
+                                            <h5 class="services__item-title">Vivamus tincidunt</h5>
+                                            <p class="services__item-desc">
+                                                Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque.
+                                                Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi
+                                                ullamcorper.
+                                                Curabitur tellus ligula, laoreet vitae lectus vitae.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div> <!-- service item end -->
+
+                        <!-- service item start -->
+                        <div class="col-12 mb-4 mb-sm-5 col-md-6 serv-item-mb-xl">
+                            <article class="services__item h-100 text-center">
+                                <div class="row">
+                                    <div class="col-12 col-lg-2">
+                                        <div class="services__item-icon h-100">
+                                            <span class="fas fa-desktop"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <div class="service__item-content">
+                                            <h5 class="services__item-title">Vivamus tincidunt</h5>
+                                            <p class="services__item-desc">
+                                                Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque.
+                                                Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi
+                                                ullamcorper.
+                                                Curabitur tellus ligula, laoreet vitae lectus vitae.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div> <!-- service item end -->
+
+                        <!-- service item start -->
+                        <div class="col-12 mb-4 mb-sm-5 col-md-6 serv-item-mb-xl">
+                            <article class="services__item h-100 text-center">
+                                <div class="row">
+                                    <div class="col-12 col-lg-2">
+                                        <div class="services__item-icon h-100">
+                                            <span class="fas fa-tachometer-alt"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <div class="service__item-content">
+                                            <h5 class="services__item-title">Vivamus tincidunt</h5>
+                                            <p class="services__item-desc">
+                                                Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque.
+                                                Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi
+                                                ullamcorper.
+                                                Curabitur tellus ligula, laoreet vitae lectus vitae.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div> <!-- service item end -->
+
+                        <!-- service item start -->
+                        <div class="col-12 mb-4 mb-sm-5 col-md-6 serv-item-mb-xl">
+                            <article class="services__item h-100 text-center">
+                                <div class="row">
+                                    <div class="col-12 col-lg-2">
+                                        <div class="services__item-icon h-100">
+                                            <span class="fas fa-globe-europe"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <div class="service__item-content">
+                                            <h5 class="services__item-title">Vivamus tincidunt</h5>
+                                            <p class="services__item-desc">
+                                                Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque.
+                                                Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi
+                                                ullamcorper.
+                                                Curabitur tellus ligula, laoreet vitae lectus vitae.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div> <!-- service item end -->
+                    </div><!-- main grid end -->
+                </div> <!-- wrapper end -->
+            </div> <!-- container end -->
+        </section> <!-- services section end -->
+
+        <!-- about section start -->
+        <section id="about" class="about">
+            <!-- container start -->
+            <div class="container-fluid p-0">
+                <!-- main grid start -->
+                <div class="row p-0 gx-0">
+                    <!-- item start -->
+                    <div class="col-12 col-md-6">
+                        <figure class="h-100 ratio ratio-3by4 m-0">
+                            <img src="./images/about.jpg" alt="hiker" />
+                        </figure>
+                    </div> <!-- item end -->
+
+                    <!-- item start -->
+                    <div class="col-12 col-md-6">
+                        <article class="about__wrapper h-100">
+                            <div class="about__content px-3 px-lg-5 ps-xl-4 text-center text-md-start">
+
+                                <h2 class="section-title">Who we are</h2>
+
+                                <p class=" about-desc mb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Praesent dui massa, condimentum a nisl quis, tristique efficitur erat.
+                                    Aenean ut suscipit urna. Donec efficitur tristique lobortis.
+                                    Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus
+                                    vitae sollicitudin.
+                                    Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque.
+                                    Vestibulum quis hendrerit enim.
+                                    Aenean viverra aliquam ex, sed ornare risus porta in.
+                                </p>
+                                <p class=" about-desc">
+                                    Aenean ut suscipit urna.
+                                    Donec efficitur tristique lobortis.
+                                    Nullam eu efficitur lacus, et blandit tellus.
+                                    Mauris viverra condimentum tellus vitae sollicitudin.
+                                    Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque.
+                                    Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta
+                                    in.
+                                </p>
+                                <a class="btn" href="#">read more</a>
+                            </div>
+                        </article>
+                    </div> <!-- item end -->
+                </div> <!-- main grid end -->
+            </div> <!-- container end -->
+        </section> <!-- about section end -->
+
+        <!-- portfolio section start -->
+        <section id="portfolio" class="portfolio">
+
+            <div class="container-fluid p-lg-0">
+                <h2 class="section-title">See our work</h2>
+                <div class="section-title-decoration d-flex justify-content-center align-items-center">
+                    <span class="deco-line"></span>
+                    <span class="deco-icon fas fa-cog"></span>
+                    <span class="deco-line"></span>
+                </div>
+
+                <p class="text-center">
+                    Mauris euismod ac nulla vitae fermentum.
+                    Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis,
+                    in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.
+                </p>
+
+                <!-- portfolio nav start -->
+                <nav class="portfolio__nav text-center">
+                    <ul class="d-flex flex-column justify-content-center align-items-center flex-sm-row">
+                        <li class="portfolio__nav-item">
+                            <a class="active" href="#">all</a>
+                        </li>
+                        <li class="portfolio__nav-item">
+                            <a href="#">web</a>
+                        </li>
+                        <li class="portfolio__nav-item">
+                            <a href="#">logo design</a>
+                        </li>
+                        <li class="portfolio__nav-item">
+                            <a href="#">WordPress</a>
+                        </li>
+                        <li class="portfolio__nav-item">
+                            <a href="#">E-commerce</a>
+                        </li>
+                    </ul>
+                </nav> <!-- portfolio nav end -->
+
+                <!-- wrapper start -->
+                <div class="portfolio__item-wrapper">
+                    <!-- main grid start -->
+                    <div class="row gx-2 gx-lg-0 ">
+                        <!-- portfolio item start -->
+                        <div class="col-12 port-item-mb-mob col-sm-6 col-lg-3">
+                            <figure class="portfolio__item h-100 m-0 ratio ratio-3by4">
+                                <a href="#" class="d-block">
+                                    <img class="h-100" src="./images/gallery/gallery-01.jpg" alt="bird" />
+                                </a>
+
+                                <div class="view-project-opt">
+                                    <a href="#" class="view-opt-icon text-center mb-4 text-white">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <div class="view-opt-text text-center">
+                                        <a class="d-block mb-2 text-white" href="#">Labore et dolore magnam</a>
+                                        <p class="m-0">Wordpress</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div> <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="col-12 port-item-mb-mob col-sm-6 col-lg-3">
+                            <figure class="portfolio__item h-100 m-0 ratio ratio-3by4">
+                                <a href="#" class="d-block">
+                                    <img class="h-100" src="./images/gallery/gallery-02.jpg" alt="bird" />
+                                </a>
+
+                                <div class="view-project-opt">
+                                    <a href="#" class="view-opt-icon text-center mb-4 text-white">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <div class="view-opt-text text-center">
+                                        <a class="d-block mb-2 text-white" href="#">Labore et dolore magnam</a>
+                                        <p class="m-0">Wordpress</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div> <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="col-12 port-item-mb-mob col-sm-6 col-lg-3">
+                            <figure class="portfolio__item h-100 m-0 ratio ratio-3by4">
+                                <a href="#" class="d-block">
+                                    <img class="h-100" src="./images/gallery/gallery-03.jpg" alt="bird" />
+                                </a>
+
+                                <div class="view-project-opt">
+                                    <a href="#" class="view-opt-icon text-center mb-4 text-white">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <div class="view-opt-text text-center">
+                                        <a class="d-block mb-2 text-white" href="#">Labore et dolore magnam</a>
+                                        <p class="m-0">Wordpress</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div> <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="col-12 port-item-mb-mob col-sm-6 col-lg-3">
+                            <figure class="portfolio__item h-100 m-0 ratio ratio-3by4">
+                                <a href="#" class="d-block">
+                                    <img class="h-100" src="./images/gallery/gallery-04.jpg" alt="bird" />
+                                </a>
+
+
+                                <div class="view-project-opt">
+                                    <a href="#" class="view-opt-icon text-center mb-4 text-white">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <div class="view-opt-text text-center">
+                                        <a class="d-block mb-2 text-white" href="#">Labore et dolore magnam</a>
+                                        <p class="m-0">Wordpress</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div> <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="col-12 port-item-mb-mob col-sm-6 col-lg-3">
+                            <figure class="portfolio__item h-100 m-0 ratio ratio-3by4">
+                                <a href="#" class="d-block">
+                                    <img class="h-100" src="./images/gallery/gallery-05.jpg" alt="bird" />
+                                </a>
+
+                                <div class="view-project-opt">
+                                    <a href="#" class="view-opt-icon text-center mb-4 text-white">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <div class="view-opt-text text-center">
+                                        <a class="d-block mb-2 text-white" href="#">Labore et dolore magnam</a>
+                                        <p class="m-0">Wordpress</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div> <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="col-12 port-item-mb-mob col-sm-6 col-lg-3">
+                            <figure class="portfolio__item h-100 m-0 ratio ratio-3by4">
+                                <a href="#" class="d-block">
+                                    <img class="h-100" src="./images/gallery/gallery-06.jpg" alt="bird" />
+                                </a>
+
+                                <div class="view-project-opt">
+                                    <a href="#" class="view-opt-icon text-center mb-4 text-white">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <div class="view-opt-text text-center">
+                                        <a class="d-block mb-2 text-white" href="#">Labore et dolore magnam</a>
+                                        <p class="m-0">Wordpress</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div> <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="col-12 port-item-mb-mob col-sm-6 col-lg-3">
+                            <figure class="portfolio__item h-100 m-0 ratio ratio-3by4">
+                                <a href="#" class="d-block">
+                                    <img class="h-100" src="./images/gallery/gallery-07.jpg" alt="bird" />
+                                </a>
+
+                                <div class="view-project-opt">
+                                    <a href="#" class="view-opt-icon text-center mb-4 text-white">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <div class="view-opt-text text-center">
+                                        <a class="d-block mb-2 text-white" href="#">Labore et dolore magnam</a>
+                                        <p class="m-0">Wordpress</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div> <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="col-12 port-item-mb-mob col-sm-6 col-lg-3">
+                            <figure class="portfolio__item h-100 m-0 ratio ratio-3by4">
+                                <a href="#" class="d-block">
+                                    <img class="h-100" src="./images/gallery/gallery-08.jpg" alt="bird" />
+                                </a>
+
+                                <div class="view-project-opt">
+                                    <a href="#" class="view-opt-icon text-center mb-4 text-white">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <div class="view-opt-text text-center">
+                                        <a class="d-block mb-2 text-white" href="#">Labore et dolore magnam</a>
+                                        <p class="m-0">Wordpress</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div> <!-- portfolio item end -->
+                    </div> <!-- main grid end -->
+                </div> <!-- wrapper end -->
+            </div> <!-- container end -->
+        </section> <!-- porftolio section end -->
+
+        <!-- testemonials section start -->
+        <section id="testemonials" class="testemonials">
+            <!-- container strat -->
+            <div class="container">
+
+                <h2 class="section-title">Testimonials</h2>
+                <div class="section-title-decoration d-flex justify-content-center align-items-center">
+                    <span class="deco-line"></span>
+                    <span class="deco-icon far fa-comments"></span>
+                    <span class="deco-line"></span>
+                </div>
+
+                <div id="slide-indicator" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- main grid start -->
+                            <div class="row justify-content-md-around">
+                                <!-- testemonial item strat -->
+                                <div class="col-12 mb-5 col-md-5">
+                                    <article class="testemonial__item h-100">
+                                        <div class="row">
+                                            <div class="col-12 testem-desc-mb">
+                                                <p class="testemonial__desc h-100 test">
+                                                    “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consec tetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                    incidunt utis labore et dolore magnam aliquam quaerat voluptatem.
+                                                    Ut enim ad minimas veniam, quis nostrum exercitationem ullam
+                                                    corporis
+                                                    suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                                                </p>
+                                                <div class="testemonial__desc-triangle"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="testemonial__user h1-00 d-flex align-items-end">
+
+                                                    <div class="user-icon">
+                                                        <span class="fas fa-user-tie"></span>
+                                                    </div>
+                                                    <p class="testemonial__user-info"><b>Jon Doe,</b>Company Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> <!-- testemonial item end -->
+
+                                <!-- testemonial item strat -->
+                                <div class="col-12 mb-5 col-md-5">
+                                    <article class="testemonial__item h-100">
+                                        <div class="row">
+                                            <div class="col-12 testem-desc-mb">
+                                                <p class="testemonial__desc h-100 test">
+                                                    “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consec tetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                    incidunt utis labore et dolore magnam aliquam quaerat voluptatem.
+                                                    Ut enim ad minimas veniam, quis nostrum exercitationem ullam
+                                                    corporis
+                                                    suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                                                </p>
+                                                <div class="testemonial__desc-triangle"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="testemonial__user h1-00 d-flex align-items-end">
+
+                                                    <div class="user-icon">
+                                                        <span class="fas fa-user-tie"></span>
+                                                    </div>
+                                                    <p class="testemonial__user-info"><b>Jon Doe,</b>Company Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> <!-- testemonial item end -->
+                            </div> <!-- main grid end -->
+                        </div>
+                        <div class="carousel-item">
+                            <!-- main grid start -->
+                            <div class="row justify-content-md-around">
+                                <!-- testemonial item strat -->
+                                <div class="col-12 mb-5 col-md-5">
+                                    <article class="testemonial__item h-100">
+                                        <div class="row">
+                                            <div class="col-12 testem-desc-mb">
+                                                <p class="testemonial__desc h-100 test">
+                                                    “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consec tetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                    incidunt utis labore et dolore magnam aliquam quaerat voluptatem.
+                                                    Ut enim ad minimas veniam, quis nostrum exercitationem ullam
+                                                    corporis
+                                                    suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                                                </p>
+                                                <div class="testemonial__desc-triangle"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="testemonial__user h1-00 d-flex align-items-end">
+
+                                                    <div class="user-icon">
+                                                        <span class="fas fa-user-tie"></span>
+                                                    </div>
+                                                    <p class="testemonial__user-info"><b>Jon Doe,</b>Company Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> <!-- testemonial item end -->
+
+                                <!-- testemonial item strat -->
+                                <div class="col-12 mb-5 col-md-5">
+                                    <article class="testemonial__item h-100">
+                                        <div class="row">
+                                            <div class="col-12 testem-desc-mb">
+                                                <p class="testemonial__desc h-100 test">
+                                                    “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consec tetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                    incidunt utis labore et dolore magnam aliquam quaerat voluptatem.
+                                                    Ut enim ad minimas veniam, quis nostrum exercitationem ullam
+                                                    corporis
+                                                    suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                                                </p>
+                                                <div class="testemonial__desc-triangle"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="testemonial__user h1-00 d-flex align-items-end">
+
+                                                    <div class="user-icon">
+                                                        <span class="fas fa-user-tie"></span>
+                                                    </div>
+                                                    <p class="testemonial__user-info"><b>Jon Doe,</b>Company Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> <!-- testemonial item end -->
+                            </div> <!-- main grid end -->
+                        </div>
+                        <div class="carousel-item">
+                            <!-- main grid start -->
+                            <div class="row justify-content-md-around">
+                                <!-- testemonial item strat -->
+                                <div class="col-12 mb-5 col-md-5">
+                                    <article class="testemonial__item h-100">
+                                        <div class="row">
+                                            <div class="col-12 testem-desc-mb">
+                                                <p class="testemonial__desc h-100 test">
+                                                    “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consec tetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                    incidunt utis labore et dolore magnam aliquam quaerat voluptatem.
+                                                    Ut enim ad minimas veniam, quis nostrum exercitationem ullam
+                                                    corporis
+                                                    suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                                                </p>
+                                                <div class="testemonial__desc-triangle"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="testemonial__user h1-00 d-flex align-items-end">
+
+                                                    <div class="user-icon">
+                                                        <span class="fas fa-user-tie"></span>
+                                                    </div>
+                                                    <p class="testemonial__user-info"><b>Jon Doe,</b>Company Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> <!-- testemonial item end -->
+
+                                <!-- testemonial item strat -->
+                                <div class="col-12 mb-5 col-md-5">
+                                    <article class="testemonial__item h-100">
+                                        <div class="row">
+                                            <div class="col-12 testem-desc-mb">
+                                                <p class="testemonial__desc h-100 test">
+                                                    “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consec tetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                    incidunt utis labore et dolore magnam aliquam quaerat voluptatem.
+                                                    Ut enim ad minimas veniam, quis nostrum exercitationem ullam
+                                                    corporis
+                                                    suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                                                </p>
+                                                <div class="testemonial__desc-triangle"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="testemonial__user h1-00 d-flex align-items-end">
+
+                                                    <div class="user-icon">
+                                                        <span class="fas fa-user-tie"></span>
+                                                    </div>
+                                                    <p class="testemonial__user-info"><b>Jon Doe,</b>Company Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> <!-- testemonial item end -->
+                            </div> <!-- main grid end -->
+                        </div>
+                        <div class="carousel-item">
+                            <!-- main grid start -->
+                            <div class="row justify-content-md-around">
+                                <!-- testemonial item strat -->
+                                <div class="col-12 mb-5 col-md-5">
+                                    <article class="testemonial__item h-100">
+                                        <div class="row">
+                                            <div class="col-12 testem-desc-mb">
+                                                <p class="testemonial__desc h-100 test">
+                                                    “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consec tetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                    incidunt utis labore et dolore magnam aliquam quaerat voluptatem.
+                                                    Ut enim ad minimas veniam, quis nostrum exercitationem ullam
+                                                    corporis
+                                                    suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                                                </p>
+                                                <div class="testemonial__desc-triangle"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="testemonial__user h1-00 d-flex align-items-end">
+
+                                                    <div class="user-icon">
+                                                        <span class="fas fa-user-tie"></span>
+                                                    </div>
+                                                    <p class="testemonial__user-info"><b>Jon Doe,</b>Company Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> <!-- testemonial item end -->
+
+                                <!-- testemonial item strat -->
+                                <div class="col-12 mb-5 col-md-5">
+                                    <article class="testemonial__item h-100">
+                                        <div class="row">
+                                            <div class="col-12 testem-desc-mb">
+                                                <p class="testemonial__desc h-100 test">
+                                                    “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consec tetur, adipisci velit, sed quia non numquam eius modi tempora
+                                                    incidunt utis labore et dolore magnam aliquam quaerat voluptatem.
+                                                    Ut enim ad minimas veniam, quis nostrum exercitationem ullam
+                                                    corporis
+                                                    suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                                                </p>
+                                                <div class="testemonial__desc-triangle"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="testemonial__user h1-00 d-flex align-items-end">
+
+                                                    <div class="user-icon">
+                                                        <span class="fas fa-user-tie"></span>
+                                                    </div>
+                                                    <p class="testemonial__user-info"><b>Jon Doe,</b>Company Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> <!-- testemonial item end -->
+                            </div> <!-- main grid end -->
+                        </div>
+                    </div>
+
+                    <div class="testemonials-carousel-indicators carousel-indicators mb-5">
+                        <button class="slide-btn active" type="button" data-bs-target="#slide-indicator"
+                            data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                        <button class="slide-btn" type="button" data-bs-target="#slide-indicator" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button class="slide-btn" type="button" data-bs-target="#slide-indicator" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button class="slide-btn" type="button" data-bs-target="#slide-indicator" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                </div>
+            </div> <!-- container end -->
+        </section> <!-- testemonials section end -->
+
+        <!-- contact section start -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <!-- wrapper start -->
+                <div class="contact-wrapper">
+                    <!-- main grid start -->
+                    <div class="row gx-5">
+                        <!-- item start -->
+                        <div class="col-12 col-md-6 col-lg-3 mb-5">
+                            <article class="h-100">
+                                <h3 class="contact__item-title pacifico-title">business name</h3>
+                                <p class="contact__item-desc contact__item-desc--lighter text-center text-md-start">
+                                    Donec vitae cursus quam. Etiam dignissim,
+                                    nulla a congue auctor, massa urna cursus enim,
+                                    id sodales elit ligula quis diam. Morbi ut semper augue.
+                                    Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus.
+                                    Donec sed orci placerat, vulputate risus id, faucibus massa.
+                                    Mauris justo arcu, faucibus at nunc quis.
+                                </p>
+                            </article>
+                        </div> <!-- item end -->
+
+                        <!-- item start -->
+                        <div class="col-12 col-md-6 col-lg-3 mb-5">
+                            <div class="h-100">
+                                <h3 class="contact__item-title">contact</h3>
+                                <p class="contact__item-desc text-center text-md-start">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in so.
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-5 col-md-3">
+                                                    <div class="contact__icon h-100 text-end text-md-center">
+                                                        <span class="fas fa-map-marker-alt"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7 col-md-9 p-md-0">
+                                                    <div class="contact__info h-100 d-flex align-items-center">
+                                                        <a class="contact-link"
+                                                            href="https://goo.gl/maps/RWj2byDFihPBqmgAA"
+                                                            target="_blank">hyderabadh</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-5 col-md-3">
+                                                    <div class="contact__icon h-100 text-end text-md-center">
+                                                        <span class="fas fa-envelope"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7 col-md-9 p-md-0">
+                                                    <div class="contact__info h-100 d-flex align-items-center">
+                                                        <a class="contact-link"
+                                                            href="mailto:info@company.com">info@company.com</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-5 col-md-3">
+                                                    <div class="contact__icon h-100 text-end text-md-center">
+                                                        <span class="fas fa-phone"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7 col-md-9 p-md-0">
+                                                    <div class="contact__info h-100 d-flex align-items-center">
+                                                        <a class="contact-link" href="tel:123-456-7890">123 456 7890</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- item end -->
+
+                        <!-- item start -->
+                        <div class="col-12 col-md-6 col-lg-3 mb-5">
+                            <!-- wrapper start -->
+                            <div class="tweets-wrapper h-100">
+                                <h3 class="contact__item-title">latest tweets</h3>
+
+                                <!-- inner grid strat -->
+                                <div class="row">
+                                    <!-- item start -->
+                                    <div class="col-12 mb-3">
+                                        <a class="twitter-post d-block h-100" href="#" target="_blank">
+                                            <!-- sub-grid start -->
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <div class="twitter-icon h-100 text-center">
+                                                        <span class="fab fa-twitter"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-md-10">
+                                                    <div class="twitter-post__content h-100">
+                                                        <p class="twitter-post__desc mb-2">
+                                                            Curabitur felis nibh, lacinia non rhoncus vel,
+                                                            lobortis et lorem. Class aptent taciti sociosqu
+                                                            ad litora torquent per.
+                                                        </p>
+                                                        <p class="twitter-post__time">5 hours ago</p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- sub-grid end -->
+                                        </a>
+                                    </div> <!-- item end -->
+
+                                    <!-- item start -->
+                                    <div class="col-12 mb-3">
+                                        <a class="twitter-post d-block h-100" href="#" target="_blank">
+                                            <!-- sub-grid start -->
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <div class="twitter-icon h-100 text-center">
+                                                        <span class="fab fa-twitter"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-md-10">
+                                                    <div class="twitter-post__content h-100">
+                                                        <p class="twitter-post__desc mb-2">
+                                                            Curabitur felis nibh, lacinia non rhoncus vel,
+                                                            lobortis et lorem. Class aptent taciti sociosqu
+                                                            ad litora torquent.
+                                                        </p>
+                                                        <p class="twitter-post__time">5 hours ago</p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- sub-grid end -->
+                                        </a>
+                                    </div> <!-- item end -->
+                                </div> <!-- inner grid end -->
+                            </div> <!-- wrapper end -->
+                        </div> <!-- item end -->
+
+                        <!-- item start -->
+                        <div class="col-12 col-md-6 col-lg-3 mb-5">
+                            <article class="h-100">
+                                <h3 class="contact__item-title">news letter</h3>
+                                <p class="contact__item-desc mb-4">
+                                    Type your email address below and recive our daily news letter for free
+                                </p>
+                                <!-- subscribe form start -->
+                                <form action="POST" class="subscribe-form">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input id="sub-mail-input" type="email" class="form-control"
+                                                placeholder="Email Address" aria-label="Recipient's username"
+                                                aria-describedby="button-addon2">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                                onclick="validatesSubscribeForm()">Submit</button>
+                                        </div>
+                                        <p id="mail-error"></p>
+                                    </div>
+                                </form> <!-- subscribe form end -->
+                            </article>
+                        </div> <!-- item end -->
+                    </div> <!-- main grid end -->
+                </div> <!-- wrapper end -->
+            </div> <!-- container end -->
+        </section> <!-- contact section end -->
+
+    </main> <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 mb-4 col-md-4 mb-md-0">
+                    <p class="h-100 d-flex justify-content-center align-items-center m-0">
+                        &COPY; 2015 Business name.All rights reserved.
+                    </p>
+                </div>
+
+                <div class="col-12 mb-4 col-md-4 mb-md-0">
+                    <p class="h-100 d-flex justify-content-center align-items-center m-0">
+                        Designed by: Cubes School;
+                    </p>
+                    <p class="h-100 d-flex justify-content-center align-items-center m-0 small">
+                        Developed by : Predrag Nastić
+                    </p>
+                </div>
+
+                <div class="col-12 mb-4 col-md-4 mb-md-0">
+                    <nav
+                        class="footer__social-nav h-100 d-flex justify-content-center justify-content-md-end align-items-center m-0">
+
+                        <a href="#" class="social-link d-block">
+                            <span class="fab fa-twitter"></span>
+                        </a>
+
+                        <a href="#" class="social-link d-block">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+
+                        <a href="#" class="social-link d-block">
+                            <span class="fab fa-linkedin-in"></span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- FOOTER END -->
+
+
+    <!-- SCRIPTS -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/85bd05dd45.js" crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

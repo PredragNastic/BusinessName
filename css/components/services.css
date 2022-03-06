@@ -1,0 +1,86 @@
+/*** MOBILE ***/
+
+.services{
+    padding-top: 43px;
+    padding-bottom: 14px; /*da nadoknadi, po dizajnu, ostastak whitespace-a od 94px-jer item-i imaju mb-80px*/
+}
+
+.services__lead{
+    margin-bottom: 58px;
+}
+
+.services h2{
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+
+.services .services__item .services__item-icon{
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: #709DCA;
+}
+
+.services .services__item:hover .services__item-icon{
+    color: #FFC155;
+}
+
+.services .services__item-title{
+    text-transform: uppercase;
+}
+
+
+/*** SM - 576 
+@media(min-width:576px){
+}***/
+
+/*** MD - 768 ***/
+@media(min-width:768px){
+    .services{
+        padding-top: 63px;
+    }
+    
+    .services__lead{
+        margin-bottom: 68px;
+    }
+
+    .services .services__item .services__item-icon{
+        font-size: 26px;
+    }
+}
+
+/*** LG - 992 ***/
+@media(min-width:992px){
+    .services{
+        padding-top: 73px;
+    }
+    
+    .services__lead{
+        margin-bottom: 78px;
+    }
+
+    .services .services__item .services__item-icon{
+        margin-bottom: 0;
+    }
+
+}
+
+/*** XL - 1200 ***/
+@media(min-width:1200px){
+    .services{
+        padding-top: 83px;
+    }
+
+    .services__lead{
+        margin-bottom: 88px;
+    }
+
+    .services .services__item .services__item-icon{
+        font-size: 32px;
+    }
+}
+
+/*** XXL - 1400 
+@media(min-width:1400px){
+}***/
+
