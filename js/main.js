@@ -23,7 +23,7 @@ function validatesSubscribeForm() {
 
 //---HEADER BACKGROUND ANIMATION:
 function headerBackgroundAnimation() {
-    const currentScrollPosition = window.scrollY;
+    let currentScrollPosition = window.scrollY;
 
     (currentScrollPosition > 100) ? setsAttribute('page-top', "style", "background-color: #000;")
         : setsAttribute('page-top', "style", "background-color: transparent;");
