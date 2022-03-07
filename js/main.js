@@ -25,6 +25,11 @@ function validatesSubscribeForm() {
 function headerBackgroundAnimation() {
     let currentScrollPosition = window.scrollY;
 
-    (currentScrollPosition > 100) ? setsAttribute('page-top', "style", "background-color: #000;")
+    (currentScrollPosition > 100) ? setsAttribute('page-top', "style", "background-color: #000; transition: 0.3s linear;")
         : setsAttribute('page-top', "style", "background-color: transparent;");
 };
+
+//---EVENTS:
+window.addEventListener('scroll', () => headerBackgroundAnimation());
+window.addEventListener('load', () => headerBackgroundAnimation());
+document.getElementById('button-addon2').addEventListener('click', () => validatesSubscribeForm());
