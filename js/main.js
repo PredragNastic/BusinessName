@@ -3,6 +3,8 @@ const getsInputData = (id) => document.getElementById(id).value.trim();
 const setsAttribute = (id, att, val) => document.getElementById(id).setAttribute(att, val);
 const setsInnerText = (id, txt) => document.getElementById(id).innerText = txt;
 const clearsInputField = (id, val) => document.getElementById(id).value = val;
+const addsClass = (id, className) => document.getElementById(id).classList.add(className);
+const removesClass = (id, className) => document.getElementById(id).classList.remove(className);
 
 //---SUBSCRIBE FORM VALIDATOR:
 function validatesSubscribeForm() {
