@@ -13,9 +13,9 @@ function validatesSubscribeForm() {
     errorMessage += (inputData.length < 5 || inputData.indexOf('@', 2) < 0) ? 'Please insert a valid email addres' : '';
 
     if (errorMessage.length > 0) return setsInnerText('mail-error', errorMessage),
-        setsAttribute('mail-error', "style", "margin-top: 8px; padding: 8px; background-color: #ccc; text-align: center; border-width: 2px; border-style: solid; border-color: red");
+        setsAttribute('mail-error', "style", "margin-top: 8px; padding: 8px; background-color: #ccc; text-align: center; border-width: 2px; border-style: solid; border-color: red;");
 
-    setsAttribute('mail-error', "style", "background-color: none;");
+    setsAttribute('mail-error', "style", "margin: 0; padding: 0; background-color: none; border-width: 0; border-style: none; border-color: none;");
     setsInnerText('mail-error', '');
 
     if (errorMessage.length === 0) clearsInputField('sub-mail-input', '');
