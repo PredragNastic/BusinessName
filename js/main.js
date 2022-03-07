@@ -22,6 +22,10 @@ const removesClassMx_3 = (...id) => {
     for (x of id) document.getElementById(`${x}`).classList.remove("mx-3");
 }
 
+const removesClassActive = (...id) => {
+    for (x of id) document.getElementById(`${x}`).classList.remove("active");
+}
+
 //---HEADER BACKGROUND ANIMATION:
 function headerBackgroundAnimation() {
     let currentScrollPosition = window.scrollY;
@@ -49,36 +53,46 @@ function validatesSubscribeForm() {
 
 //---PRTFOLIO NAVIGATION:
 function displayesAllProjects() {
+    addsClass('all-btn', "active");
+    removesClassActive('web-btn', 'logo-btn', 'wp-btn', 'ecom-btn')
     removesClasDisplayNone('web-item-1', 'web-item-2', 'logo-design-item-1', 'logo-design-item-2', 'wordpress-item-1', 'wordpress-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     removesClassMx_3('web-item-1', 'web-item-2', 'logo-design-item-1', 'logo-design-item-2', 'wordpress-item-1', 'wordpress-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     removesClass('portfolio-wrapper', "justify-content-center");
 }
 
 function displayesWebProjects() {
+    addsClass('web-btn', "active");
     addsClassDisplayNone('logo-design-item-1', 'logo-design-item-2', 'wordpress-item-1', 'wordpress-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     addsClass('portfolio-wrapper', "justify-content-center");
     addsClassMx_3('web-item-1', 'web-item-2');
+    removesClassActive('all-btn', 'logo-btn', 'wp-btn', 'ecom-btn');
     removesClasDisplayNone('web-item-1', 'web-item-2');
 }
 
 function displayesLogoDesignProjects() {
+    addsClass('logo-btn', "active");
     addsClassDisplayNone('web-item-1', 'web-item-2', 'wordpress-item-1', 'wordpress-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     addsClass('portfolio-wrapper', "justify-content-center");
     addsClassMx_3('logo-design-item-1', 'logo-design-item-2');
+    removesClassActive('all-btn', 'web-btn', 'wp-btn', 'ecom-btn');
     removesClasDisplayNone('logo-design-item-1', 'logo-design-item-2');
 }
 
 function displayesWordpressProjects() {
+    addsClass('wp-btn', "active");
     addsClassDisplayNone('web-item-1', 'web-item-2', 'logo-design-item-1', 'logo-design-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     addsClass('portfolio-wrapper', "justify-content-center");
     addsClassMx_3('wordpress-item-1', 'wordpress-item-2');
+    removesClassActive('all-btn', 'web-btn', 'logo-btn', 'ecom-btn');
     removesClasDisplayNone('wordpress-item-1', 'wordpress-item-2');
 }
 
 function displayesEcommerceProjects() {
+    addsClass('ecom-btn', "active");
     addsClassDisplayNone('web-item-1', 'web-item-2', 'logo-design-item-1', 'logo-design-item-2', 'wordpress-item-1', 'wordpress-item-2');
     addsClass('portfolio-wrapper', "justify-content-center");
     addsClassMx_3('e-commerce-item-1', 'e-commerce-item-2');
+    removesClassActive('all-btn', 'web-btn', 'logo-btn', 'wp-btn');
     removesClasDisplayNone('e-commerce-item-1', 'e-commerce-item-2');
 }
 
@@ -86,6 +100,7 @@ function displayesEcommerceProjects() {
 //--Onaload:
 window.addEventListener('load', () => headerBackgroundAnimation());
 document.addEventListener('load', () => displayesAllProjects());
+
 
 //--Scroll:
 window.addEventListener('scroll', () => headerBackgroundAnimation());
