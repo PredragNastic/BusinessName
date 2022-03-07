@@ -1,11 +1,8 @@
 //---UTILITY FUNCTIONS:
 const getsInputData = (id) => document.getElementById(id).value.trim();
-
 const clearsInputField = (id, val) => document.getElementById(id).value = val;
-
 const setsInnerText = (id, txt) => document.getElementById(id).innerText = txt;
 const setsAttribute = (id, att, val) => document.getElementById(id).setAttribute(att, val);
-
 const addsClass = (id, className) => document.getElementById(id).classList.add(className);
 const removesClass = (id, className) => document.getElementById(id).classList.remove(className);
 
@@ -33,8 +30,7 @@ const removesClassActive = (...id) => {
 function headerBackgroundAnimation() {
     let currentScrollPosition = window.scrollY;
 
-    (currentScrollPosition > 100) ? setsAttribute('page-top', "style", "background-color: #000; transition: 0.3s linear;")
-        : setsAttribute('page-top', "style", "background-color: transparent;");
+    (currentScrollPosition > 100) ? setsAttribute('page-top', "style", "background-color: #000; transition: 0.3s linear;") : setsAttribute('page-top', "style", "background-color: transparent;");
 };
 
 //---SUBSCRIBE FORM VALIDATOR:
@@ -107,15 +103,14 @@ function displayesEcommerceProjects() {
     removesClasDisplayNone('ecom-item-1', 'ecom-item-2');
 }
 
-//---EVENTS:
-//--Onaload:
+//---ONLOAD EVENTS:
 window.addEventListener('load', () => headerBackgroundAnimation());
 document.addEventListener('load', () => displayesAllProjects());
 
-//--Scroll:
+//---SCROLL EVENTS:
 window.addEventListener('scroll', () => headerBackgroundAnimation());
 
-//--Clicks:
+//---CLICK EVENTS:
 document.getElementById('all-btn').addEventListener('click', (e) => {
     e.preventDefault(), displayesAllProjects();
 });
