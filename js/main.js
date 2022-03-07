@@ -1,8 +1,11 @@
 //---UTILITY FUNCTIONS:
 const getsInputData = (id) => document.getElementById(id).value.trim();
+
 const clearsInputField = (id, val) => document.getElementById(id).value = val;
+
 const setsInnerText = (id, txt) => document.getElementById(id).innerText = txt;
 const setsAttribute = (id, att, val) => document.getElementById(id).setAttribute(att, val);
+
 const addsClass = (id, className) => document.getElementById(id).classList.add(className);
 const removesClass = (id, className) => document.getElementById(id).classList.remove(className);
 
@@ -54,53 +57,60 @@ function validatesSubscribeForm() {
 //---PRTFOLIO NAVIGATION:
 function displayesAllProjects() {
     addsClass('all-btn', "active");
-    removesClassActive('web-btn', 'logo-btn', 'wp-btn', 'ecom-btn')
-    removesClasDisplayNone('web-item-1', 'web-item-2', 'logo-design-item-1', 'logo-design-item-2', 'wordpress-item-1', 'wordpress-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
-    removesClassMx_3('web-item-1', 'web-item-2', 'logo-design-item-1', 'logo-design-item-2', 'wordpress-item-1', 'wordpress-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     removesClass('portfolio-wrapper', "justify-content-center");
+
+    removesClassActive('web-btn', 'logo-btn', 'wp-btn', 'ecom-btn')
+    removesClasDisplayNone('web-item-1', 'web-item-2', 'logo-item-1', 'logo-item-2', 'wp-item-1', 'wp-item-2', 'ecom-item-1', 'ecom-item-2');
+    removesClassMx_3('web-item-1', 'web-item-2', 'logo-item-1', 'logo-item-2', 'wp-item-1', 'wp-item-2', 'ecom-item-1', 'ecom-item-2');
 }
 
 function displayesWebProjects() {
     addsClass('web-btn', "active");
-    addsClassDisplayNone('logo-design-item-1', 'logo-design-item-2', 'wordpress-item-1', 'wordpress-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     addsClass('portfolio-wrapper', "justify-content-center");
+
+    addsClassDisplayNone('logo-item-1', 'logo-item-2', 'wp-item-1', 'wp-item-2', 'ecom-item-1', 'ecom-item-2');
     addsClassMx_3('web-item-1', 'web-item-2');
+
     removesClassActive('all-btn', 'logo-btn', 'wp-btn', 'ecom-btn');
     removesClasDisplayNone('web-item-1', 'web-item-2');
 }
 
 function displayesLogoDesignProjects() {
     addsClass('logo-btn', "active");
-    addsClassDisplayNone('web-item-1', 'web-item-2', 'wordpress-item-1', 'wordpress-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     addsClass('portfolio-wrapper', "justify-content-center");
-    addsClassMx_3('logo-design-item-1', 'logo-design-item-2');
+
+    addsClassDisplayNone('web-item-1', 'web-item-2', 'wp-item-1', 'wp-item-2', 'ecom-item-1', 'ecom-item-2');
+    addsClassMx_3('logo-item-1', 'logo-item-2');
     removesClassActive('all-btn', 'web-btn', 'wp-btn', 'ecom-btn');
-    removesClasDisplayNone('logo-design-item-1', 'logo-design-item-2');
+    removesClasDisplayNone('logo-item-1', 'logo-item-2');
 }
 
 function displayesWordpressProjects() {
     addsClass('wp-btn', "active");
-    addsClassDisplayNone('web-item-1', 'web-item-2', 'logo-design-item-1', 'logo-design-item-2', 'e-commerce-item-1', 'e-commerce-item-2');
     addsClass('portfolio-wrapper', "justify-content-center");
-    addsClassMx_3('wordpress-item-1', 'wordpress-item-2');
+
+    addsClassDisplayNone('web-item-1', 'web-item-2', 'logo-item-1', 'logo-item-2', 'ecom-item-1', 'ecom-item-2');
+    addsClassMx_3('wp-item-1', 'wp-item-2');
+
     removesClassActive('all-btn', 'web-btn', 'logo-btn', 'ecom-btn');
-    removesClasDisplayNone('wordpress-item-1', 'wordpress-item-2');
+    removesClasDisplayNone('wp-item-1', 'wp-item-2');
 }
 
 function displayesEcommerceProjects() {
     addsClass('ecom-btn', "active");
-    addsClassDisplayNone('web-item-1', 'web-item-2', 'logo-design-item-1', 'logo-design-item-2', 'wordpress-item-1', 'wordpress-item-2');
     addsClass('portfolio-wrapper', "justify-content-center");
-    addsClassMx_3('e-commerce-item-1', 'e-commerce-item-2');
+
+    addsClassDisplayNone('web-item-1', 'web-item-2', 'logo-item-1', 'logo-item-2', 'wp-item-1', 'wp-item-2');
+    addsClassMx_3('ecom-item-1', 'ecom-item-2');
+
     removesClassActive('all-btn', 'web-btn', 'logo-btn', 'wp-btn');
-    removesClasDisplayNone('e-commerce-item-1', 'e-commerce-item-2');
+    removesClasDisplayNone('ecom-item-1', 'ecom-item-2');
 }
 
 //---EVENTS:
 //--Onaload:
 window.addEventListener('load', () => headerBackgroundAnimation());
 document.addEventListener('load', () => displayesAllProjects());
-
 
 //--Scroll:
 window.addEventListener('scroll', () => headerBackgroundAnimation());
