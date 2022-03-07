@@ -92,24 +92,19 @@ window.addEventListener('scroll', () => headerBackgroundAnimation());
 
 //--Clicks:
 document.getElementById('all-btn').addEventListener('click', (e) => {
-    e.preventDefault();
-    displayesAllProjects();
+    e.preventDefault(), displayesAllProjects();
 });
 document.getElementById('web-btn').addEventListener('click', (e) => {
-    e.preventDefault();
-    displayesWebProjects();
+    e.preventDefault(), displayesWebProjects();
 });
 document.getElementById('logo-btn').addEventListener('click', (e) => {
-    e.preventDefault();
-    displayesLogoDesignProjects();
+    e.preventDefault(), displayesLogoDesignProjects();
 });
 document.getElementById('wp-btn').addEventListener('click', (e) => {
-    e.preventDefault();
-    displayesWordpressProjects();
+    e.preventDefault(), displayesWordpressProjects();
 });
 document.getElementById('ecom-btn').addEventListener('click', (e) => {
-    e.preventDefault();
-    displayesEcommerceProjects();
+    e.preventDefault(), displayesEcommerceProjects();
 });
 
 document.getElementById('button-addon2').addEventListener('click', () => validatesSubscribeForm());
