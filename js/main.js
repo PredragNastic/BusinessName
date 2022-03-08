@@ -135,9 +135,6 @@ window.addEventListener('load', () => animatesAboutSection());
 //window.addEventListener('resize', () => animatesAboutSection());
 
 
-
-
-
 //---SCROLL EVENTS:
 window.addEventListener('scroll', () => headerBackgroundAnimation());
 window.addEventListener('scroll', () => animatesAboutSection());
