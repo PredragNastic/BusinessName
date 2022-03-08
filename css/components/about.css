@@ -14,7 +14,6 @@
     color: #fff;
 }
 
-
 .about .about__content .about-desc:last-of-type{
     margin-bottom: 48px;
 }
@@ -28,10 +27,9 @@
     color: #fff;
 }
 
-/*** SM - 576 ***/
+/*** SM - 576 
 @media(min-width:576px){
-
-}
+}***/
 
 /*** MD - 768 ***/
 @media(min-width:768px){
@@ -43,19 +41,16 @@
 
 /*** LG - 992 ***/
 @media(min-width:992px){
-
     .about .about__wrapper{
         padding: 64px 0 0 0;
     }
 
     .about .about__content .section-title{
         margin-bottom: 37px;
-
     }
 
     .about .about__content .about-desc{
         max-width: 504px;
-
     }
 
     .about .about__content .about-desc:last-of-type{
@@ -64,21 +59,42 @@
 
     .about .about__content a.btn{
         margin-bottom: 84px;
-
     }
-
 }
 
 /*** XL - 1200 ***/
 @media(min-width:1200px){
-    
     .about .about__wrapper{
         padding: 96px 0 0 0;
     }
-
 }
 
-/*** XXL - 1400 ***/
+/*** XXL - 1400 
 @media(min-width:1400px){
+}***/
 
-}
+/*** ANIMATIONS ***/
+    .positionCenterFromLeft{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .positionCenterFromRight{
+        position: relative;
+        right: 50%;;
+        transform: translateX(50%);
+    }
+
+    .slideOutRight {
+        position: relative;
+        right: 25%;
+        transition: 1s linear;
+    }
+
+    .slideOutLeft {
+        position: relative;
+        left: 25%;
+        transition: 1s linear;
+    }
+

@@ -103,12 +103,43 @@ function displayesEcommerceProjects() {
     removesClasDisplayNone('ecom-item-1', 'ecom-item-2');
 }
 
+//---ABOUT SECTION ANIMATION:
+const addsPositionClasses = () => {
+    addsClass('about-img', "positionCenterFromLeft");
+    addsClass('about-txt', "positionCenterFromRight");
+}
+
+const removesPositionClasses = () => {
+    removesClass('about-img', "positionCenterFromLeft");
+    removesClass('about-txt', "positionCenterFromRight");
+}
+
+function animatesAboutSection() {
+    let screenSize = screen.width;
+    let currentScrollPosition = window.scrollY;
+
+    if (screenSize < 768) return;
+
+    addsPositionClasses();
+    if (currentScrollPosition > 900) {
+        addsClass('about-img', "slideOutLeft");
+        addsClass('about-txt', "slideOutRight");
+    }
+}
+
+
 //---ONLOAD EVENTS:
-window.addEventListener('load', () => headerBackgroundAnimation());
 document.addEventListener('load', () => displayesAllProjects());
+window.addEventListener('load', () => headerBackgroundAnimation());
+window.addEventListener('load', () => animatesAboutSection());
+//window.addEventListener('resize', () => animatesAboutSection());
+
+
 
 //---SCROLL EVENTS:
 window.addEventListener('scroll', () => headerBackgroundAnimation());
+window.addEventListener('scroll', () => animatesAboutSection());
+
 
 //---CLICK EVENTS:
 document.getElementById('all-btn').addEventListener('click', (e) => {
