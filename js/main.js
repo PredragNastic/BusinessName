@@ -26,6 +26,16 @@ const removesClassActive = (...id) => {
     for (x of id) document.getElementById(`${x}`).classList.remove("active");
 }
 
+let addsPositionClasses = () => {
+    addsClass('about-img', "positionCenterFromLeft");
+    addsClass('about-txt', "positionCenterFromRight");
+}
+
+let removesPositionClasses = () => {
+    removesClass('about-img', "positionCenterFromLeft");
+    removesClass('about-txt', "positionCenterFromRight");
+}
+
 //---HEADER BACKGROUND ANIMATION:
 function headerBackgroundAnimation() {
     let currentScrollPosition = window.scrollY;
@@ -34,6 +44,23 @@ function headerBackgroundAnimation() {
     if (screenSize < 992) return setsAttribute('page-top', "style", "background-color: #000;");
     (currentScrollPosition > 100) ? setsAttribute('page-top', "style", "background-color: #000; transition: 0.3s linear;") : setsAttribute('page-top', "style", "background-color: transparent;");
 };
+
+//---ABOUT SECTION ANIMATION:
+function animatesAboutSection() {
+    let screenSize = screen.width;
+    let currentScrollPosition = window.scrollY;
+
+    if (screenSize < 768) return removesPositionClasses(),
+        removesClass('about-img', "slideOutLeft"),
+        removesClass('about-txt', "slideOutRight");
+
+    addsPositionClasses();
+
+    if (currentScrollPosition > 800 && screenSize >= 768) {
+        addsClass('about-img', "slideOutLeft");
+        addsClass('about-txt', "slideOutRight");
+    }
+}
 
 //---SUBSCRIBE FORM VALIDATOR:
 function validatesSubscribeForm() {
@@ -79,6 +106,7 @@ function displayesLogoDesignProjects() {
 
     addsClassDisplayNone('web-item-1', 'web-item-2', 'wp-item-1', 'wp-item-2', 'ecom-item-1', 'ecom-item-2');
     addsClassMx_3('logo-item-1', 'logo-item-2');
+
     removesClassActive('all-btn', 'web-btn', 'wp-btn', 'ecom-btn');
     removesClasDisplayNone('logo-item-1', 'logo-item-2');
 }
@@ -104,34 +132,6 @@ function displayesEcommerceProjects() {
     removesClassActive('all-btn', 'web-btn', 'logo-btn', 'wp-btn');
     removesClasDisplayNone('ecom-item-1', 'ecom-item-2');
 }
-
-//---ABOUT SECTION ANIMATION:
-const addsPositionClasses = () => {
-    addsClass('about-img', "positionCenterFromLeft");
-    addsClass('about-txt', "positionCenterFromRight");
-}
-
-const removesPositionClasses = () => {
-    removesClass('about-img', "positionCenterFromLeft");
-    removesClass('about-txt', "positionCenterFromRight");
-}
-
-function animatesAboutSection() {
-    let screenSize = screen.width;
-    let currentScrollPosition = window.scrollY;
-
-    if (screenSize < 768) return removesPositionClasses(),
-        removesClass('about-img', "slideOutLeft"),
-        removesClass('about-txt', "slideOutRight");
-
-    addsPositionClasses();
-
-    if (currentScrollPosition > 800) {
-        addsClass('about-img', "slideOutLeft");
-        addsClass('about-txt', "slideOutRight");
-    }
-}
-
 
 //---ONLOAD EVENTS:
 document.addEventListener('load', () => displayesAllProjects());
