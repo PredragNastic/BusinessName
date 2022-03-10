@@ -29,6 +29,9 @@ const removesClassActive = (...id) => {
 //---HEADER BACKGROUND ANIMATION:
 function headerBackgroundAnimation() {
     let currentScrollPosition = window.scrollY;
+    let screenSize = screen.width;
+
+    if (screenSize < 992) return setsAttribute('page-top', "style", "background-color: #000;");
 
     (currentScrollPosition > 100) ? setsAttribute('page-top', "style", "background-color: #000; transition: 0.3s linear;") : setsAttribute('page-top', "style", "background-color: transparent;");
 };
@@ -132,7 +135,11 @@ function animatesAboutSection() {
 document.addEventListener('load', () => displayesAllProjects());
 window.addEventListener('load', () => headerBackgroundAnimation());
 window.addEventListener('load', () => animatesAboutSection());
+
+
+//---ONRESIZE EVENTS:
 //window.addEventListener('resize', () => animatesAboutSection());
+window.addEventListener('resize', () => headerBackgroundAnimation());
 
 
 //---SCROLL EVENTS:
