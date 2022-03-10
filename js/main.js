@@ -1,5 +1,6 @@
 //---UTILITY FUNCTIONS:
 const getsInputData = (id) => document.getElementById(id).value.trim();
+
 const clearsInputField = (id, val) => document.getElementById(id).value = val;
 const setsInnerText = (id, txt) => document.getElementById(id).innerText = txt;
 const setsAttribute = (id, att, val) => document.getElementById(id).setAttribute(att, val);
@@ -7,37 +8,32 @@ const addsClass = (id, className) => document.getElementById(id).classList.add(c
 const removesClass = (id, className) => document.getElementById(id).classList.remove(className);
 
 const addsClassDisplayNone = (...id) => {
-    for (x of id) document.getElementById(`${x}`).classList.add("d-none");
+    for (i of id) document.getElementById(`${i}`).classList.add("d-none");
 }
-
 const removesClasDisplayNone = (...id) => {
-    for (x of id) document.getElementById(`${x}`).classList.remove("d-none");
+    for (i of id) document.getElementById(`${i}`).classList.remove("d-none");
 }
-
 const addsClassMx_3 = (...id) => {
-    for (x of id) document.getElementById(`${x}`).classList.add("mx-3");
+    for (i of id) document.getElementById(`${i}`).classList.add("mx-3");
 }
-
 const removesClassMx_3 = (...id) => {
-    for (x of id) document.getElementById(`${x}`).classList.remove("mx-3");
+    for (i of id) document.getElementById(`${i}`).classList.remove("mx-3");
 }
-
 const removesClassActive = (...id) => {
-    for (x of id) document.getElementById(`${x}`).classList.remove("active");
+    for (i of id) document.getElementById(`${i}`).classList.remove("active");
 }
 
-let addsPositionClasses = () => {
+const addsAboutSectionPositionClasses = () => {
     addsClass('about-img', "positionCenterFromLeft");
     addsClass('about-txt', "positionCenterFromRight");
 }
-
-let removesPositionClasses = () => {
+const removesAboutSectionPositionClasses = () => {
     removesClass('about-img', "positionCenterFromLeft");
     removesClass('about-txt', "positionCenterFromRight");
 }
 
 //---HEADER BACKGROUND ANIMATION:
-function headerBackgroundAnimation() {
+function headerBackgroundAnimation("class") {
     let currentScrollPosition = window.scrollY;
     let screenSize = screen.width;
 
@@ -50,11 +46,11 @@ function animatesAboutSection() {
     let screenSize = screen.width;
     let currentScrollPosition = window.scrollY;
 
-    if (screenSize < 768) return removesPositionClasses(),
+    if (screenSize < 768) return removesAboutSectionPositionClasses(),
         removesClass('about-img', "slideOutLeft"),
         removesClass('about-txt', "slideOutRight");
 
-    addsPositionClasses();
+    addsAboutSectionPositionClasses();
 
     if (currentScrollPosition > 800 && screenSize >= 768) {
         addsClass('about-img', "slideOutLeft");
