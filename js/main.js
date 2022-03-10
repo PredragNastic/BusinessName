@@ -120,10 +120,13 @@ function animatesAboutSection() {
     let screenSize = screen.width;
     let currentScrollPosition = window.scrollY;
 
-    if (screenSize < 768) return;
+    if (screenSize < 768) return removesPositionClasses(),
+        removesClass('about-img', "slideOutLeft"),
+        removesClass('about-txt', "slideOutRight");
 
     addsPositionClasses();
-    if (currentScrollPosition > 900) {
+
+    if (currentScrollPosition > 800) {
         addsClass('about-img', "slideOutLeft");
         addsClass('about-txt', "slideOutRight");
     }
@@ -137,7 +140,7 @@ window.addEventListener('load', () => animatesAboutSection());
 
 
 //---ONRESIZE EVENTS:
-//window.addEventListener('resize', () => animatesAboutSection());
+window.addEventListener('resize', () => animatesAboutSection());
 window.addEventListener('resize', () => headerBackgroundAnimation());
 
 
