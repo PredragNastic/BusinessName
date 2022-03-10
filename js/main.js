@@ -33,7 +33,7 @@ const removesAboutSectionPositionClasses = () => {
 }
 
 //---HEADER BACKGROUND ANIMATION:
-function headerBackgroundAnimation("class") {
+function headerBackgroundAnimation() {
     let currentScrollPosition = window.scrollY;
     let screenSize = screen.width;
 
@@ -52,7 +52,7 @@ function animatesAboutSection() {
 
     addsAboutSectionPositionClasses();
 
-    if (currentScrollPosition > 800 && screenSize >= 768) {
+    if (currentScrollPosition > 800) {
         addsClass('about-img', "slideOutLeft");
         addsClass('about-txt', "slideOutRight");
     }
