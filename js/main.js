@@ -32,7 +32,6 @@ function headerBackgroundAnimation() {
     let screenSize = screen.width;
 
     if (screenSize < 992) return setsAttribute('page-top', "style", "background-color: #000;");
-
     (currentScrollPosition > 100) ? setsAttribute('page-top', "style", "background-color: #000; transition: 0.3s linear;") : setsAttribute('page-top', "style", "background-color: transparent;");
 };
 
